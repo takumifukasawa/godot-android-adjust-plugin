@@ -1,4 +1,3 @@
 include ':adjust-plugin'
-include ':app'
 include ':app', ':godot-lib.release'
 rootProject.name = "godot-android-adjust-plugin"

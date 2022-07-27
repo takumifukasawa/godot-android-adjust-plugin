@@ -4,19 +4,18 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="testRunner" value="PLATFORM" />
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleJvm" value="JDK" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/adjust-plugin" />
-            <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/godot-lib.release" />
+            <option value="$USER_HOME$/HDD2/r/a/godot-android-adjust-plugin" />
+            <option value="$USER_HOME$/HDD2/r/a/godot-android-adjust-plugin/adjust-plugin" />
+            <option value="$USER_HOME$/HDD2/r/a/godot-android-adjust-plugin/app" />
+            <option value="$USER_HOME$/HDD2/r/a/godot-android-adjust-plugin/godot-lib.release" />
           </set>
         </option>
-        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>
   </component>
