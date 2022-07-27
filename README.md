@@ -8,6 +8,14 @@ This is Android Adjust plugin for Godot 3.2.2 or higher.
 * On Godot platform choose: Project -> Export -> Options and make sure turn on the "Use Custom Build" and "Godot Adjust" on the "Plugins" section:
 ![Annotation 2020-07-24 213436](https://user-images.githubusercontent.com/3739222/88424072-9644e300-cdf5-11ea-9a1d-9d282b70550e.png)
 
+### Permissions
+```
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+<uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+```
+
+
 ## Basic Example in Godot (GDScript)
 ```
     const adjust_app_token = "12345.."

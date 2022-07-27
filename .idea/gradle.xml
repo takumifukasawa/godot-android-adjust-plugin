@@ -12,7 +12,6 @@
           <set>
             <option value="$USER_HOME$/HDD2/r/a/godot-android-adjust-plugin" />
             <option value="$USER_HOME$/HDD2/r/a/godot-android-adjust-plugin/adjust-plugin" />
-            <option value="$USER_HOME$/HDD2/r/a/godot-android-adjust-plugin/app" />
             <option value="$USER_HOME$/HDD2/r/a/godot-android-adjust-plugin/godot-lib.release" />
           </set>
         </option>
