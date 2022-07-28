@@ -15,9 +15,6 @@ import org.godotengine.godot.Godot;
 import org.godotengine.godot.plugin.GodotPlugin;
 import org.godotengine.godot.plugin.UsedByGodot;
 
-import java.util.Collections;
-import java.util.List;
-
 public class GodotAdjust extends GodotPlugin {
 
     private static final String TAG = "godot-adjust";
@@ -30,12 +27,14 @@ public class GodotAdjust extends GodotPlugin {
     }
 
     @UsedByGodot
-    public void init(final String appToken) {
+    public void init(final String appToken, boolean isProduction) {
         Log.i(TAG, "Started initializing GodotAdjust Singleton with App Token: " + appToken);
         activity.runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                String environment = AdjustConfig.ENVIRONMENT_SANDBOX;
+                String environment = isProduction ?
+                        AdjustConfig.ENVIRONMENT_PRODUCTION :
+                        AdjustConfig.ENVIRONMENT_SANDBOX;
 
                 AdjustConfig config = new AdjustConfig(activity.getApplicationContext(), appToken, environment);
                 config.setLogLevel(LogLevel.VERBOSE);
