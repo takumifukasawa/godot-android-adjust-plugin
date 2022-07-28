@@ -32,5 +32,5 @@ This is Android Adjust plugin for Godot 3.2.2 or higher.
 
 **Functions:**
 ```
-init(app_token)
+init(app_token, is_production)
 ```
