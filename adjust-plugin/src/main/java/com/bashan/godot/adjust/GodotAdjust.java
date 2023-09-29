@@ -6,10 +6,13 @@ import android.os.Bundle;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import com.adjust.sdk.Adjust;
 import com.adjust.sdk.AdjustConfig;
+import com.adjust.sdk.AdjustEventSuccess;
 import com.adjust.sdk.LogLevel;
+import com.adjust.sdk.OnEventTrackingSucceededListener;
 
 import org.godotengine.godot.Godot;
 import org.godotengine.godot.plugin.GodotPlugin;
@@ -40,6 +43,10 @@ public class GodotAdjust extends GodotPlugin {
                 config.setLogLevel(LogLevel.VERBOSE);
 
                 Adjust.onCreate(config);
+
+                // needs call once
+                // ref: https://github.com/adjust/unity_sdk/blob/0ba9d15e8609e73e43e7f5b00a2bc68dc9574b81/Assets/Adjust/Android/AdjustAndroid.cs#L253C9-L253C9
+                Adjust.onResume();
 
                 activity.getApplication().registerActivityLifecycleCallbacks(new AdjustLifecycleCallbacks());
 
