@@ -1,7 +1,7 @@
 # Godot Android Adjust Plugin
 This is Android Adjust plugin for Godot 3.2.2 or higher.
 
-(self checked Godot 4.4.1)
+(self checked Godot 4.1.1)
 
 ## Adjust SDK Version
 
