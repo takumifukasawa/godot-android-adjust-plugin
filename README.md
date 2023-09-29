@@ -1,6 +1,8 @@
 # Godot Android Adjust Plugin
 This is Android Adjust plugin for Godot 3.2.2 or higher.
 
+(self checked Godot 4.4.1)
+
 ## How to use
 * On your Godot project install android build template. You can follow the [official documentation](https://docs.godotengine.org/en/latest/getting_started/workflow/export/android_custom_build.html)
 * Go to Releases (on the right of this repository page) and download a released version. It is a ZIP file containing 2 files: "aar" of the plugin and "gdap" file describing it,
@@ -14,6 +16,12 @@ This is Android Adjust plugin for Godot 3.2.2 or higher.
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
 ```
+
+Maybe you need to check the permission yourself on the Export Window.
+
+![access_network_state](https://github.com/takumifukasawa/godot-android-adjust-plugin/assets/947953/71bdbeac-7972-4993-af35-c65c1b507183)
+
+![internet](https://github.com/takumifukasawa/godot-android-adjust-plugin/assets/947953/5bf6753d-55dd-49e4-99c3-992d83bcdd6d)
 
 
 ## Basic Example in Godot (GDScript)
