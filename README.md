@@ -3,6 +3,10 @@ This is Android Adjust plugin for Godot 3.2.2 or higher.
 
 (self checked Godot 4.4.1)
 
+## Adjust SDK Version
+
+4.30.0
+
 ## How to use
 * On your Godot project install android build template. You can follow the [official documentation](https://docs.godotengine.org/en/latest/getting_started/workflow/export/android_custom_build.html)
 * Go to Releases (on the right of this repository page) and download a released version. It is a ZIP file containing 2 files: "aar" of the plugin and "gdap" file describing it,
